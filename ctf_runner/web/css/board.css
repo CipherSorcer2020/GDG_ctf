@@ -1,6 +1,6 @@
 body { overflow-x:hidden; }
 .stage-head { display:flex; align-items:center; gap:1.2rem; padding:1rem 2rem; }
-.stage-logo { height:var(--logo-h); width:auto; max-width:280px; object-fit:contain; }  /* size: --logo-h in theme.css */
+.stage-logo { height:var(--logo-h); width:auto; max-width:500px; object-fit:contain; }  /* size: --logo-h in theme.css */
 .stage-head .club { font-size:.85rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); }
 .stage-head h1 { font-size:clamp(1.6rem,3.4vw,2.6rem); line-height:1.1; }
 .spacer { flex:1; }

@@ -70,7 +70,7 @@ button:disabled { opacity:.5; cursor:not-allowed; }
           backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
 .topbar-in { display:flex; align-items:center; gap:.9rem; padding:.6rem 1.2rem; max-width:1180px; margin:0 auto; flex-wrap:wrap; }
 .brand { display:flex; align-items:center; gap:.7rem; text-decoration:none; color:var(--text); min-width:0; }
-.brand img { height:var(--logo-h); width:auto; max-width:260px; object-fit:contain; flex:0 0 auto; cursor:pointer; user-select:none; display:block; }
+.brand img { height:var(--logo-h); width:auto; max-width:500px; object-fit:contain; flex:0 0 auto; cursor:pointer; user-select:none; display:block; }
 .brand .club { font-size:.74rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); line-height:1.1; }
 .brand .event { font-size:1.15rem; font-weight:700; line-height:1.2; }
 .spacer { flex:1; }
