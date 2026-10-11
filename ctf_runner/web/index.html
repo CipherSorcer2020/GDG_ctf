@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CTF</title>
+<link rel="icon" href="/brand/logo">
+<script src="/static/js/theme.js"></script>
+<link rel="stylesheet" href="/static/css/theme.css">
+<link rel="stylesheet" href="/static/css/app.css">
+</head>
+<body data-tab="challenges">
+<div id="offline" class="banner" hidden>Connection lost &mdash; retrying&hellip;</div>
+
+<!-- Lobby: join -> waiting room -> countdown -->
+<div id="lobby" class="overlay">
+  <div class="overlay-card">
+    <img class="logo" src="/brand/logo" alt="">
+    <div class="club-line muted" data-brand-club></div>
+    <div id="lobby-join">
+      <h2 id="join-title">Welcome! &#128075;</h2>
+      <p id="lobby-join-text">Pick a name to join the game. Your friends will see it on the scoreboard.</p>
+      <form id="join-form">
+        <input id="join-name" type="text" placeholder="your name" maxlength="32" autocomplete="off" required>
+        <div id="join-err" class="err" role="alert"></div>
+        <button type="submit" class="btn-go">Join the game</button>
+      </form>
+    </div>
+    <div id="lobby-wait" hidden>
+      <h2>You're in! &#127881;</h2>
+      <p>Waiting for the organizers to start <span class="dots"><i></i><i></i><i></i><i></i></span></p>
+      <div class="muted" style="font-size:.85rem"><b id="player-count">0</b> players ready</div>
+      <div class="chips" id="player-list"></div>
+    </div>
+    <div id="lobby-count" hidden>
+      <p class="muted" style="margin:0">Get ready&hellip;</p>
+      <div class="countdown-num" id="count-num">3</div>
+    </div>
+  </div>
+</div>
+
+<div class="colorbar"><i></i><i></i><i></i><i></i></div>
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="/" aria-label="Home">
+      <img id="logo" src="/brand/logo" alt="Club logo">
+    </a>
+    <span class="spacer"></span>
+    <a class="chip blue" href="/game">&#127918; Tutorial game</a>
+    <span id="me" class="chip"></span>
+    <button id="theme" class="icon-btn" type="button"></button>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="col-main">
+    <div id="howto" class="card howto" hidden>
+      <button id="howto-x" class="icon-btn" type="button" aria-label="Hide this tip">&#10005;</button>
+      <h3>&#128075; New to CTFs? Here's the whole idea</h3>
+      <ol>
+        <li>Each challenge hides a secret code called a <b>flag</b>. It looks like <code>flag{some_words_here}</code>.</li>
+        <li>Download the files (if any), poke around, and find it. Paste it in the box to score points.</li>
+        <li><b>Stuck? Totally normal.</b> Every challenge has 3 hints &mdash; from a gentle nudge to a walkthrough. Use them!</li>
+      </ol>
+    </div>
+
+    <div class="progress-card card">
+      <div class="progress-top"><b id="prog-text">0 of 0 solved</b><span id="prog-pts" class="chip green"></span></div>
+      <div class="bar"><div id="prog-bar"></div></div>
+    </div>
+
+    <div class="filters" role="group" aria-label="Filter challenges">
+      <button type="button" data-f="all" class="on">All <span id="n-all"></span></button>
+      <button type="button" data-f="todo">To do <span id="n-todo"></span></button>
+      <button type="button" data-f="done">Solved <span id="n-done"></span></button>
+    </div>
+    <div id="challenges" data-filter="all" aria-live="polite"></div>
+  </section>
+
+  <aside id="col-board">
+    <h2>&#127942; Scoreboard</h2>
+    <div id="scoreboard" class="card board"></div>
+    <h3 class="feed-title">&#127881; Recent activity</h3>
+    <ul id="feed" class="feed card"></ul>
+  </aside>
+</main>
+
+<footer>Made with &#128153; by <b data-brand-club data-fallback="your club">your club</b> &middot; good luck &mdash; and ask for a hint when you're stuck.</footer>
+
+<nav class="bottom-nav" aria-label="Sections">
+  <button type="button" data-tab="challenges" class="on">&#127937;<span>Challenges</span></button>
+  <button type="button" data-tab="board">&#127942;<span>Scoreboard</span></button>
+  <a href="/game" class="navlink">&#127918;<span>Tutorial</span></a>
+</nav>
+
+<script src="/static/js/common.js"></script>
+<script src="/static/js/fx.js"></script>
+<script src="/static/js/app.js"></script>
+</body>
+</html>

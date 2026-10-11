@@ -1,0 +1,81 @@
+.wrap { display:grid; grid-template-columns:minmax(0,1fr) 340px; gap:1.5rem; padding:1.3rem 1.2rem 0; max-width:1180px; margin:0 auto; }
+@media (max-width:880px) { .wrap { grid-template-columns:1fr; padding:1rem .8rem 0; } }
+aside h2 { font-size:1.15rem; margin:.2rem 0 .7rem; } .feed-title { font-size:1rem; margin:1.2rem 0 .6rem; }
+#col-board { align-self:start; position:sticky; top:84px; }
+@media (max-width:880px) { #col-board { position:static; } }
+
+.card { background:var(--surface); border-radius:var(--radius); box-shadow:var(--shadow); padding:1.1rem 1.2rem; margin-bottom:1rem; position:relative; }
+.howto h3 { font-size:1.05rem; margin-bottom:.4rem; } .howto ol { margin:.3rem 0 0; padding-left:1.2rem; color:var(--muted); } .howto li { margin:.25rem 0; }
+.howto { background:var(--blue-soft); } .howto ol { color:var(--text); }
+#howto-x { position:absolute; top:.4rem; right:.4rem; }
+.progress-top { display:flex; justify-content:space-between; align-items:center; gap:.6rem; flex-wrap:wrap; }
+.bar { height:10px; background:var(--surface2); border-radius:99px; overflow:hidden; margin-top:.7rem; }
+.bar > div { height:100%; width:0; border-radius:99px; transition:width .6s cubic-bezier(.2,.8,.2,1);
+             background:linear-gradient(90deg,var(--blue),var(--red),var(--yellow),var(--green)); background-size:300% 100%; }
+
+.filters { display:flex; gap:.5rem; margin:.2rem 0 1rem; flex-wrap:wrap; }
+.filters button { padding:.4rem 1rem; font-size:.92rem; }
+.filters button.on { background:var(--blue-soft); border-color:var(--blue); color:var(--blue-ink); }
+.filters span { opacity:.7; font-weight:400; }
+#challenges[data-filter="todo"] .chal.solved, #challenges[data-filter="done"] .chal:not(.solved) { display:none; }
+
+/* challenge cards */
+.chal { border-left:6px solid var(--blue); }
+.chal.cat-red { border-left-color:var(--red); } .chal.cat-yellow { border-left-color:var(--yellow); } .chal.cat-green { border-left-color:var(--green); }
+.chal.solved { background:linear-gradient(0deg, var(--green-soft), var(--green-soft)), var(--surface); border-left-color:var(--green); }
+.chal.pulse { animation:glow 1.2s ease-out; }
+@keyframes glow { 0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--green) 70%, transparent)} 100%{box-shadow:0 0 0 22px transparent} }
+.chal-head { display:flex; flex-wrap:wrap; gap:.5rem .7rem; align-items:center; }
+.chal-title { font-size:1.2rem; font-weight:700; margin-right:auto; }
+.chal-meta { display:flex; flex-wrap:wrap; gap:.4rem; align-items:center; }
+.pts { font-weight:700; color:var(--yellow-ink); }
+.firstblood { font-size:.85rem; color:var(--muted); margin-top:.3rem; }
+.story { margin:.8rem 0; overflow-x:auto; } .story p { margin:.55rem 0; } .story ul,.story ol { padding-left:1.3rem; margin:.5rem 0; }
+.story h3,.story h4 { margin:1rem 0 .3rem; font-size:1rem; color:var(--blue-ink); }
+.files { background:var(--surface2); border-radius:14px; padding:.7rem 1rem; margin:.8rem 0; }
+.files h4 { margin:0 0 .3rem; font-size:.78rem; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); }
+.files ul { list-style:none; padding:0; margin:0; } .files li { padding:.2rem 0; word-break:break-all; }
+.files a { font-weight:600; text-decoration:none; } .files a:hover { text-decoration:underline; }
+.files a.zip { display:inline-block; margin-top:.3rem; font-size:.9rem; }
+.hints { margin:.8rem 0; }
+.hints details { background:var(--yellow-soft); border-radius:14px; padding:.55rem 1rem; margin:.45rem 0; transition:background .2s; }
+.hints summary { cursor:pointer; font-weight:600; color:var(--yellow-ink); user-select:none; padding:.1rem 0; }
+.hints summary .muted { font-weight:400; font-size:.88rem; }
+.hints details[open] summary { margin-bottom:.4rem; }
+.hints details > div p { margin:.45rem 0; }
+.lesson { background:var(--green-soft); color:var(--text); border-radius:14px; padding:.8rem 1rem; margin:.9rem 0; animation:rise .5s ease-out; }
+.lesson b:first-child { color:var(--green-ink); }
+.submit { display:flex; gap:.6rem; margin-top:.9rem; } .submit input { flex:1; font-family:var(--mono); font-size:15px; }
+.done { display:flex; align-items:center; gap:.5rem; font-weight:700; color:var(--green-ink); }
+
+/* scoreboard */
+.board { padding:.4rem .5rem; }
+.row { display:flex; align-items:center; gap:.7rem; padding:.55rem .6rem; border-radius:14px; }
+.row.me { background:var(--blue-soft); }
+.row .rank { width:1.9rem; text-align:center; font-weight:700; color:var(--muted); font-size:1.05rem; }
+.row .name { flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-weight:600; }
+.row .score { font-weight:700; font-variant-numeric:tabular-nums; }
+.row .solved-n { color:var(--muted); font-size:.8rem; }
+.row.gap { justify-content:center; color:var(--muted); padding:.1rem; }
+.feed { list-style:none; padding:.5rem .8rem; } .feed li { padding:.4rem 0; border-bottom:1px solid var(--line); font-size:.92rem; }
+.feed li:last-child { border-bottom:none; } .feed li.new { animation:rise .5s ease-out; }
+
+/* phone: two tabs + bottom nav */
+.bottom-nav { display:none; }
+@media (max-width:880px) {
+  :root { --logo-h:56px; }   /* a little smaller on phones so the header stays compact */
+  .bottom-nav { position:fixed; left:0; right:0; bottom:0; z-index:30; display:flex; background:var(--surface); border-top:1px solid var(--line);
+                padding:.3rem .3rem calc(.3rem + env(safe-area-inset-bottom)); box-shadow:0 -2px 10px rgba(0,0,0,.08); }
+  .bottom-nav > * { flex:1; border:none; background:none; border-radius:14px; padding:.35rem 0; display:flex; flex-direction:column; align-items:center;
+                    font-size:1.25rem; line-height:1.2; color:var(--muted); text-decoration:none; }
+  .bottom-nav span { font-size:.7rem; font-weight:600; }
+  .bottom-nav .on { color:var(--blue-ink); background:var(--blue-soft); }
+  body[data-tab="challenges"] #col-board, body[data-tab="board"] #col-main { display:none; }
+  .topbar-in { gap:.5rem; padding:.5rem .8rem; flex-wrap:nowrap; }
+  .brand { flex:1 1 auto; } .me-pts { display:none; }
+  .spacer { display:none; } #me { max-width:42vw; overflow:hidden; text-overflow:ellipsis; }
+  .howto { font-size:.92rem; padding:.9rem 1rem; } .howto h3 { padding-right:1.6rem; font-size:1rem; }
+  .topbar-in > .chip.blue { display:none; }
+  .chal-title { flex-basis:100%; }
+  .submit { flex-direction:column; } .submit button { width:100%; padding:.75rem; }
+}

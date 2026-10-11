@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Organizer panel</title>
+  <link rel="icon" href="/brand/logo">
+  <script src="/static/js/theme.js"></script>
+  <link rel="stylesheet" href="/static/css/theme.css">
+  <style>
+    .panel {
+      max-width: 650px;
+      margin: 1.6rem auto;
+      padding: 0 1rem 3rem;
+    }
+
+    .card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.3rem 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .card h2 {
+      font-size: 1.05rem;
+      margin-bottom: .7rem;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .6rem;
+      align-items: center;
+    }
+
+    .panel input[type=password],
+    .panel select {
+      width: 100%;
+      font: inherit;
+      font-size: 16px;
+      padding: .65rem .9rem;
+      border-radius: 12px;
+      border: 1.5px solid var(--line);
+      background: var(--surface);
+      color: var(--text);
+    }
+
+    .status {
+      font-weight: 700;
+      padding: .2rem .8rem;
+      border-radius: 999px;
+    }
+
+    .status.waiting {
+      background: var(--yellow-soft);
+      color: var(--yellow-ink);
+    }
+
+    .status.starting {
+      background: var(--blue-soft);
+      color: var(--blue-ink);
+    }
+
+    .status.active {
+      background: var(--green-soft);
+      color: var(--green-ink);
+    }
+
+    .status.big {
+      font-size: 1rem;
+    }
+
+    .players {
+      max-height: 240px;
+      overflow-y: auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: .4rem;
+      margin: .4rem 0 .2rem;
+    }
+
+    label {
+      display: block;
+      font-size: .85rem;
+      color: var(--muted);
+      margin: .2rem 0 .3rem;
+    }
+
+    .help {
+      color: var(--muted);
+      font-size: .85rem;
+      margin: .7rem 0 0;
+    }
+
+    .links a {
+      margin-right: 1rem;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="colorbar"><i></i><i></i><i></i><i></i></div>
+  <div class="panel">
+    <div class="row" style="margin:1rem 0 1.2rem">
+      <img src="/brand/logo" alt="" style="height:80px">
+      <div>
+        <div class="muted" style="font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase"
+          id="club">Organizer</div>
+        <h1 style="font-size:1.3rem">Control panel</h1>
+      </div>
+      <span style="flex:1"></span><button id="theme" class="icon-btn" type="button"></button>
+    </div>
+
+    <div class="card">
+      <div class="row"><span class="muted">Game status</span><span id="state" class="status big waiting">waiting</span>
+        <span class="muted"><b id="count">0</b> players</span>
+      </div>
+      <div class="players" id="players"></div>
+    </div>
+
+    <div class="card">
+      <h2>1. Unlock with your token</h2>
+      <label for="token">Admin token &mdash; printed in the server console, never shown on this page</label>
+      <input id="token" type="password" placeholder="paste the token" autocomplete="off" spellcheck="false">
+    </div>
+
+    <div class="card">
+      <h2>2. Start the game</h2>
+      <label for="cd">Countdown for everyone</label>
+      <select id="cd">
+        <option value="5" selected>5 seconds (3-2-1 on every screen)</option>
+        <option value="10">10 seconds</option>
+        <option value="0">no countdown</option>
+      </select>
+      <div class="row" style="margin-top:.9rem">
+        <button id="start" class="btn-go">&#128640; Start game</button>
+        <button id="reset" class="btn-danger">Reset lobby</button>
+        <button id="wipe" class="btn-danger">Clear scores</button>
+      </div>
+      <div id="msg" class="msg" role="status"></div>
+      <p class="help">Start unlocks challenges for everyone at the same moment. <b>Reset lobby</b> sends everybody back
+        to waiting.
+        <b>Clear scores</b> keeps players and challenges but empties the scoreboard.
+      </p>
+    </div>
+
+    <div class="card links">
+      <h2>Handy links</h2>
+      <a href="/board" target="_blank">&#128250; Projector scoreboard</a>
+      <a href="/" target="_blank">&#127937; Player view</a>
+    </div>
+  </div>
+  <script src="/static/js/common.js"></script>
+  <script src="/static/js/fx.js"></script>
+  <script src="/static/js/admin.js"></script>
+</body>
+
+</html>

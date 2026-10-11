@@ -1,0 +1,26 @@
+{
+  "name": "SmokeDemo",
+  "flag_prefix": "flag",
+  "challenges": {
+    "webgame": {
+      "name": "webgame",
+      "title": "webgame",
+      "category": "misc",
+      "points": 500,
+      "flag_hash": "712ae9571547d65cd7603862673cc791ec11a882c097e02d37517cf9ee292a57"
+    },
+    "warmup": {
+      "name": "warmup",
+      "title": "warmup",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "d80ef3be8a0e713bb3774ed0cb66b561940e81666f87b129513d930dc2b3af2a"
+    }
+  },
+  "solves": {
+    "alice": [
+      "warmup"
+    ]
+  },
+  "spoilers_used": {}
+}

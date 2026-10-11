@@ -1,0 +1,708 @@
+{
+  "name": "PerfDemo",
+  "flag_prefix": "flag",
+  "challenges": {
+    "chal-0": {
+      "name": "chal-0",
+      "title": "chal-0",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "5ac24a23427dbc88c203fab31559426a84c7dc4c064d7f7d4206adfc2fd5239c"
+    },
+    "chal-1": {
+      "name": "chal-1",
+      "title": "chal-1",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "eccd4f9ddf460707699b63fb6b6b4e61753b79749f706a8ca3476e7b2b3bb244"
+    },
+    "chal-2": {
+      "name": "chal-2",
+      "title": "chal-2",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "56dfda2e6c94d74031a40fd2917f6c009ba3cfafac7b11276c529c2f845df54a"
+    },
+    "chal-3": {
+      "name": "chal-3",
+      "title": "chal-3",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "6cb959283b94b62d203584e3ab9ddf2848aba1ab7c547688bb0dfa8e28eb0a74"
+    },
+    "chal-4": {
+      "name": "chal-4",
+      "title": "chal-4",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "335d3c6c4b4506e7fd01a1524c26e996bd950118d8d14dea1f4805cc9998d0bb"
+    },
+    "chal-5": {
+      "name": "chal-5",
+      "title": "chal-5",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "63b9139cdd121c49b700cb712e59a9f5328bfc710cafa099d28501b08ac9df1e"
+    },
+    "chal-6": {
+      "name": "chal-6",
+      "title": "chal-6",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "647978a81e8dcfeb90d4902e7b96ff6d0f00a220e7be5abe880b90bf208127cf"
+    },
+    "chal-7": {
+      "name": "chal-7",
+      "title": "chal-7",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "d6fa1f7dc2875a28e505ce940340f1d4f0144f0d5462d0f7fdf7fe76b5688da0"
+    },
+    "chal-8": {
+      "name": "chal-8",
+      "title": "chal-8",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "cb288c88223724f946617024df28add577b9bb94f85f1eb429f43604f383fd85"
+    },
+    "chal-9": {
+      "name": "chal-9",
+      "title": "chal-9",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "6b9c974f332c0c7be628883f2a01ec149cbf4ea1edc713d6897bf05f54388df7"
+    },
+    "chal-10": {
+      "name": "chal-10",
+      "title": "chal-10",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "342cffcdb42e8700c70f2089a7734e4ce75b48dce588e2d4ac0277fe039ddd0e"
+    },
+    "chal-11": {
+      "name": "chal-11",
+      "title": "chal-11",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "c05813681f6b3b2c8a1907cdb41f4c3c075541fef9eb500cc1f10ae3ce657181"
+    },
+    "chal-12": {
+      "name": "chal-12",
+      "title": "chal-12",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "85bad226c9d90acfa9b76b230a3c81077e2e4989daf3541bfec94fa11f238577"
+    },
+    "chal-13": {
+      "name": "chal-13",
+      "title": "chal-13",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "2d55036caf121ec18a7e6f30046cfca0b5583251c4c4b3e12d75551c16e98d30"
+    },
+    "chal-14": {
+      "name": "chal-14",
+      "title": "chal-14",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "fceea93762a9a999ace3a5f06ee234e01fc6acb7f00d517e48bed8f7d02a5d72"
+    },
+    "chal-15": {
+      "name": "chal-15",
+      "title": "chal-15",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "57f4fa20a4edfb835f1560edf5ed0682bf033e05cee217ac5a73c2c0ba7e557b"
+    },
+    "chal-16": {
+      "name": "chal-16",
+      "title": "chal-16",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "16b72f2d7bb1fe952d68a9fed8216516936b37f81c024da754cbe84966f0ca08"
+    },
+    "chal-17": {
+      "name": "chal-17",
+      "title": "chal-17",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "d2522e1fe8058e0d4d7c9f7c495ca4c2d847352b1dbf088977363bac1f30c639"
+    },
+    "chal-18": {
+      "name": "chal-18",
+      "title": "chal-18",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "077ff1aa4ac772b1639863e97ff01175d58ae86eed910cf21e804366bf55c256"
+    },
+    "chal-19": {
+      "name": "chal-19",
+      "title": "chal-19",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "4b76f11ea4d273fe2cbc61ca1c7788219cb417ee5f204affbee3d9a0b2d30e38"
+    },
+    "chal-20": {
+      "name": "chal-20",
+      "title": "chal-20",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "75efcaed7d6cdcd0f265e3ce1bd05e0a874d31996cc05955db4ca3cfd42c94da"
+    },
+    "chal-21": {
+      "name": "chal-21",
+      "title": "chal-21",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "8b6b06204e664f51618626ecea5b3f6086f62c19357c61b0080e5661f92e3600"
+    },
+    "chal-22": {
+      "name": "chal-22",
+      "title": "chal-22",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "2057404e89b834537d43343ba07cd1211f7ade852a5bf1a23e9e797aa0d0cc8b"
+    },
+    "chal-23": {
+      "name": "chal-23",
+      "title": "chal-23",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "6ae201402574a1230dd7d1762aac28de5914d6db8d63b7fb7534f5ca6bddfecc"
+    },
+    "chal-24": {
+      "name": "chal-24",
+      "title": "chal-24",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "975442e37e3c621ba538b633352e3e0cb0f69c4c87ad8d898f82aee180359be5"
+    },
+    "chal-25": {
+      "name": "chal-25",
+      "title": "chal-25",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "c29f264555df4d029fc078bf379e0db90151a6416859cd0aad714fcc7dfe9b7b"
+    },
+    "chal-26": {
+      "name": "chal-26",
+      "title": "chal-26",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "dda18cb0a1bf04d595288e8639b67cae3bd1b7ea4202b470850c900376e564ee"
+    },
+    "chal-27": {
+      "name": "chal-27",
+      "title": "chal-27",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "d018f86cd77869c793e52a595b171535c6652d6ba61efd4f6f1341b378f67826"
+    },
+    "chal-28": {
+      "name": "chal-28",
+      "title": "chal-28",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "a52625bc962d098d6688aba2529c443abcd15a92ebaa9054c27b864d30773272"
+    },
+    "chal-29": {
+      "name": "chal-29",
+      "title": "chal-29",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "08a452b3b51dea0d68e6e593759921858df681209c65ff68d3cbab193c58dc72"
+    },
+    "chal-30": {
+      "name": "chal-30",
+      "title": "chal-30",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "b4c3a7958df0406e3d34e3e39b97ed509c3b50e6ee8b0a3f2355ec003af94310"
+    },
+    "chal-31": {
+      "name": "chal-31",
+      "title": "chal-31",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "d40a578821d03634308dbb21e4788dfb2d06e6804d0ba4f8cebc922d4757956e"
+    },
+    "chal-32": {
+      "name": "chal-32",
+      "title": "chal-32",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "462f2c28e4cd604ec35e07dc4635c7afd0c63480b19f45e71d34d3632f6a9b3f"
+    },
+    "chal-33": {
+      "name": "chal-33",
+      "title": "chal-33",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "a8a75774fe0bba3d263db6419794b632647c78ab8903ea4df41fb2a4d6c1c4b2"
+    },
+    "chal-34": {
+      "name": "chal-34",
+      "title": "chal-34",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "1f4441a96d3d3be891b2937585e47fc0bfefdae50f95f33d6586c607b709c4c0"
+    },
+    "chal-35": {
+      "name": "chal-35",
+      "title": "chal-35",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "485b83e260b94cb1e003fc1682baf99934da468fa0774fa9d25571a4a6f83628"
+    },
+    "chal-36": {
+      "name": "chal-36",
+      "title": "chal-36",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "8f2c707f31457b9bf399432781b7c816c0aa0c5ffb6e10e0abea4765d67e1799"
+    },
+    "chal-37": {
+      "name": "chal-37",
+      "title": "chal-37",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "84c81688aa5483e6c08e9c6d5819568eb256c95b053ca6cc5425764252f4c91c"
+    },
+    "chal-38": {
+      "name": "chal-38",
+      "title": "chal-38",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "38042d735ff87c89dd505bc91ebf10577315fbad7b8b5e0f2668848205eb606c"
+    },
+    "chal-39": {
+      "name": "chal-39",
+      "title": "chal-39",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "e07b1949845f26068e17aa27caa45df14f835df9fdc5fa9403ebdad33967783d"
+    },
+    "chal-40": {
+      "name": "chal-40",
+      "title": "chal-40",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "98f16ffaa1b6615abe67f8ba580cc49b8f86f61878e1375fb6cbb7adf581f1cf"
+    },
+    "chal-41": {
+      "name": "chal-41",
+      "title": "chal-41",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "f851a396cc279a2d5c54322db02dbccce972d06d67d9865ddc2282b5f6ce001d"
+    },
+    "chal-42": {
+      "name": "chal-42",
+      "title": "chal-42",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "5156a803e84ccb8ba8ed810e201e42f598c38f389c15e8ab18d9d0cd22e3d26e"
+    },
+    "chal-43": {
+      "name": "chal-43",
+      "title": "chal-43",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "8645c4ed64bd027b90b2c5a620304b5de7c311ef01186f9a11cd67e39d610e93"
+    },
+    "chal-44": {
+      "name": "chal-44",
+      "title": "chal-44",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "66f1d4c2e6efdb7d797da5116ecbad0954310b901d24a2930e287f07860f0983"
+    },
+    "chal-45": {
+      "name": "chal-45",
+      "title": "chal-45",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "a1194c0be498268c16da99d14302c4ecf7b47ec52ecab0e16512e8124fde98ae"
+    },
+    "chal-46": {
+      "name": "chal-46",
+      "title": "chal-46",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "129c12bb9abb7dac127a4b8276172feed6a995bcf44dfcbd3e8f01a8a304c99b"
+    },
+    "chal-47": {
+      "name": "chal-47",
+      "title": "chal-47",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "3ca050ce106ed478a6c45a04405aa72365f0cfdc6a2ac780881123dc79cd4a87"
+    },
+    "chal-48": {
+      "name": "chal-48",
+      "title": "chal-48",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "38254513b5bb2ee77defcc8723eb580442d904f99d7f134488edbc2560a03204"
+    },
+    "chal-49": {
+      "name": "chal-49",
+      "title": "chal-49",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "2cd2955576bc81d3c358000fea5ffcf57dee6533d1a29a11d7668b06d1805b64"
+    },
+    "chal-50": {
+      "name": "chal-50",
+      "title": "chal-50",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "5b2f80c25fb12e5de850abbff2e3c30708ce0dde0bcc491e622a7ef2f64a1571"
+    },
+    "chal-51": {
+      "name": "chal-51",
+      "title": "chal-51",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "c59ded9f4909ad9cbdbd52406a62dedddd9fefc5ff874a87e63d106b2a6db7eb"
+    },
+    "chal-52": {
+      "name": "chal-52",
+      "title": "chal-52",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "366318da141067888a85877e382af261c887726ccf731d4ce36667336ce17fe1"
+    },
+    "chal-53": {
+      "name": "chal-53",
+      "title": "chal-53",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "1f3174cf30918d2de1d95a29cb05fbeb9fd77aa02144091837e067a0e7630bd6"
+    },
+    "chal-54": {
+      "name": "chal-54",
+      "title": "chal-54",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "6ba9eafbd7ecf06c95517f6e7ec18fabf551248c887d63b2c158e14212bb1b33"
+    },
+    "chal-55": {
+      "name": "chal-55",
+      "title": "chal-55",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "2189061b2fb835f646105221c7ed63f3f6da264a9f3d07e80cf631ebd52e565e"
+    },
+    "chal-56": {
+      "name": "chal-56",
+      "title": "chal-56",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "ae1406b504718048988fce56c4ed17d6c0264e43dfe3a48d7b7e95c2bd6f8368"
+    },
+    "chal-57": {
+      "name": "chal-57",
+      "title": "chal-57",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "5622d54855822fdb57f7515465191706f829784893c38be4ba0e553efb227d30"
+    },
+    "chal-58": {
+      "name": "chal-58",
+      "title": "chal-58",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "648a682e13f2283f32ce5abb8005a571b72970bf1a1b30600ef62978bbebdf22"
+    },
+    "chal-59": {
+      "name": "chal-59",
+      "title": "chal-59",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "6fa2fbaaf2c093ed5bee36c4562f3801b51507ca4d2ac8a7c6314387c531b47e"
+    },
+    "chal-60": {
+      "name": "chal-60",
+      "title": "chal-60",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "8302bd22c8a2a6e51776eb25a63a61a84e89ef1c0953816b8fcef2599c6f6039"
+    },
+    "chal-61": {
+      "name": "chal-61",
+      "title": "chal-61",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "32e3deec60a11f46ca37e341e6da24054c3716144ca7572f003343e2cb06d2be"
+    },
+    "chal-62": {
+      "name": "chal-62",
+      "title": "chal-62",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "8e9588989742d673be9d1164a9f5c1e3399598e1cee25636757be4a4896e3149"
+    },
+    "chal-63": {
+      "name": "chal-63",
+      "title": "chal-63",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "1884bbfabdf7a602b1d4f2438585da36b642e8ec58eed2fa51791bb56ce43667"
+    },
+    "chal-64": {
+      "name": "chal-64",
+      "title": "chal-64",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "883d987fbc512f5ee427ddb498a5a6550ffa74f5a6ab8badac9b99d68220f8ce"
+    },
+    "chal-65": {
+      "name": "chal-65",
+      "title": "chal-65",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "941901be5b9d5f29d9becde9d503fbf68f739d264717b9a73a23bfeb0c26072b"
+    },
+    "chal-66": {
+      "name": "chal-66",
+      "title": "chal-66",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "441bfd309790287881f6c6db5f0e02db09f2dc408162de04cbcf268c283fe900"
+    },
+    "chal-67": {
+      "name": "chal-67",
+      "title": "chal-67",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "3c416fffdc7f35661b0d2bebcbd501696f7895ec9e40654f06ebee29ef11db3d"
+    },
+    "chal-68": {
+      "name": "chal-68",
+      "title": "chal-68",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "237be9711813ca0fc30798b0c91584561a7911a70ee507464b3fb776399d2299"
+    },
+    "chal-69": {
+      "name": "chal-69",
+      "title": "chal-69",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "d596f9422b43625b5d25ca8431a9229f73303ac537c987b937a3d1939344db44"
+    },
+    "chal-70": {
+      "name": "chal-70",
+      "title": "chal-70",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "71eeffcccda881d45988c76f77e9bbec535b42f4b90b44af4bc0202ef7dffc74"
+    },
+    "chal-71": {
+      "name": "chal-71",
+      "title": "chal-71",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "917fa7d5ad11cf714d32561433ba773641045cd25a9cc6cbc9e7dfcbb2d64410"
+    },
+    "chal-72": {
+      "name": "chal-72",
+      "title": "chal-72",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "5bee2a310320789e359707f4c8205c3b709bf6206bb2203fd83ff1058785de24"
+    },
+    "chal-73": {
+      "name": "chal-73",
+      "title": "chal-73",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "a4dc822afed1e0909763dcfdf3f016b7a9ef9704bc3fd70b7ede9c48b3ce604e"
+    },
+    "chal-74": {
+      "name": "chal-74",
+      "title": "chal-74",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "39b05dc9b49946a9fa73748c1fb5d74678e0ebd0b3d2ef895ebe8f64f88e8c27"
+    },
+    "chal-75": {
+      "name": "chal-75",
+      "title": "chal-75",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "58754c917c13964ccb12a5abfdda05142378ea33a9831d4fff38296d22c15dca"
+    },
+    "chal-76": {
+      "name": "chal-76",
+      "title": "chal-76",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "947cb9c64540a8ec46167b5760bb25ddd8f58369d33927c5116c57c6fee1bc1f"
+    },
+    "chal-77": {
+      "name": "chal-77",
+      "title": "chal-77",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "510b9197ec67060e0be5381376ff7d5cf2f5dcc1b90dc6496a31a6b2fd04b587"
+    },
+    "chal-78": {
+      "name": "chal-78",
+      "title": "chal-78",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "409a0e18b72151bdcd7fe932a3aade1e4a6f077c6ac77013c8e1256557bbe4d9"
+    },
+    "chal-79": {
+      "name": "chal-79",
+      "title": "chal-79",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "e0f12bd36efb8e2aaa1f738e452c1f119afc41ddfebd41868e5d0a333e5a7f30"
+    },
+    "chal-80": {
+      "name": "chal-80",
+      "title": "chal-80",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "276082154a4eecac4622be7be9d14b5f599e577757fb77564ea0e9bb7f8dabee"
+    },
+    "chal-81": {
+      "name": "chal-81",
+      "title": "chal-81",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "62a641f653e5381fc16e91677794d90f5c4356b8a8cd1f25a481f3ac5b508965"
+    },
+    "chal-82": {
+      "name": "chal-82",
+      "title": "chal-82",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "e30a985fdb2757683246bcd4e69458e392e2e1e5116101fa096edeafcc7a540e"
+    },
+    "chal-83": {
+      "name": "chal-83",
+      "title": "chal-83",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "6a2e2542317c165115c07ec12e5618ddbfb8845ece55da8b90cd80e7abd863bc"
+    },
+    "chal-84": {
+      "name": "chal-84",
+      "title": "chal-84",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "34c215b49a729773b6d79c2688cd048fb0edfdd1e55e919c05db9e0a2aed89dd"
+    },
+    "chal-85": {
+      "name": "chal-85",
+      "title": "chal-85",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "a45aaa4912b025535d38aef85036c28d313c9426e46ecfe8050dfb074bf34219"
+    },
+    "chal-86": {
+      "name": "chal-86",
+      "title": "chal-86",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "de8b6f6d5b9da3ce408ee26e1bc9b908cdbd158770810ac04415864032a67113"
+    },
+    "chal-87": {
+      "name": "chal-87",
+      "title": "chal-87",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "0c1166fd3c9ff33de64af3d5c393a26d3c62a853e26ad8820aaf04e03c6a6c2f"
+    },
+    "chal-88": {
+      "name": "chal-88",
+      "title": "chal-88",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "0910ca6c0400e32d3e67c391fc123f50a2216fc0c12aaa9f48e81dc71885f67b"
+    },
+    "chal-89": {
+      "name": "chal-89",
+      "title": "chal-89",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "cb35f1ba2ef4a8c9b3f76122680a5967f358d08df62ffdd3b472895be7e11591"
+    },
+    "chal-90": {
+      "name": "chal-90",
+      "title": "chal-90",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "a439afa499f5c616dc734d21ece2008a83af7dabcdab0291d6a6b4463acd1219"
+    },
+    "chal-91": {
+      "name": "chal-91",
+      "title": "chal-91",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "54d2c1b98ebb5f7a34c853392dfd74ed5979daf53983f1b070ed15d001cc872e"
+    },
+    "chal-92": {
+      "name": "chal-92",
+      "title": "chal-92",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "b071f765e56923d604bef7ce75f151586faf7605a3cb705adede8d7dc83f763a"
+    },
+    "chal-93": {
+      "name": "chal-93",
+      "title": "chal-93",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "bae6823b0984179012dd1155745ceede10c5494219d124165ea93255065ffb14"
+    },
+    "chal-94": {
+      "name": "chal-94",
+      "title": "chal-94",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "5a4e46e6f8896da143d881572a5814c8ae25a5e7c8ff03cce01533264d3bc529"
+    },
+    "chal-95": {
+      "name": "chal-95",
+      "title": "chal-95",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "d7d447a20d698c8ac8025434a79116c180f898453f0fa5205546ac7cd46930f0"
+    },
+    "chal-96": {
+      "name": "chal-96",
+      "title": "chal-96",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "5ed2d126bfe3cecfa5b4f4cb2451e0ddb796d084f30b9151e52f8bdb2393fb7e"
+    },
+    "chal-97": {
+      "name": "chal-97",
+      "title": "chal-97",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "71b82386c89492f375c6ac717bc0cc5a5f1f0e2e61cda1338a3c336397af15e4"
+    },
+    "chal-98": {
+      "name": "chal-98",
+      "title": "chal-98",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "0d0ba7d4b6c1b2d5a3448628902e01258b4091c22e300e1e0c7b14e6e06ecd8b"
+    },
+    "chal-99": {
+      "name": "chal-99",
+      "title": "chal-99",
+      "category": "misc",
+      "points": 100,
+      "flag_hash": "21ad62c052c076c29aa527a903b1d9af7b64a06d24e06ead9f67305723c8561f"
+    }
+  },
+  "solves": {},
+  "spoilers_used": {}
+}

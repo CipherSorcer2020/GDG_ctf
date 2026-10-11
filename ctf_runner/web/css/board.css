@@ -1,0 +1,30 @@
+body { overflow-x:hidden; }
+.stage-head { display:flex; align-items:center; gap:1.2rem; padding:1rem 2rem; }
+.stage-logo { height:var(--logo-h); width:auto; max-width:280px; object-fit:contain; }  /* size: --logo-h in theme.css */
+.stage-head .club { font-size:.85rem; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); }
+.stage-head h1 { font-size:clamp(1.6rem,3.4vw,2.6rem); line-height:1.1; }
+.spacer { flex:1; }
+.join-box { text-align:right; } .join-url { font-family:var(--mono); font-weight:700; font-size:clamp(1rem,2vw,1.5rem); color:var(--blue-ink); }
+.stage { display:grid; grid-template-columns:minmax(0,1.5fr) minmax(0,1fr); gap:2rem; padding:0 2rem 2rem; max-width:1500px; margin:0 auto; }
+@media (max-width:900px) { .stage { grid-template-columns:1fr; padding:0 1rem 2rem; } .stage-head { padding:.8rem 1rem; flex-wrap:wrap; } }
+.stage h2 { font-size:1.3rem; margin-bottom:.8rem; }
+.rows { position:relative; }
+.rrow { position:absolute; left:0; right:0; height:62px; display:flex; align-items:center; gap:1rem; padding:0 1.1rem;
+        background:var(--surface); border-radius:18px; box-shadow:var(--shadow); transition:transform .7s cubic-bezier(.2,.8,.2,1), background .4s; animation:fadein .6s ease-out both; }
+.rrow .rank { width:2.4rem; text-align:center; font-size:1.5rem; font-weight:800; color:var(--muted); }
+.rrow .avatar { width:40px; height:40px; font-size:1rem; }
+.rrow .name { flex:1; font-size:1.3rem; font-weight:700; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.rrow .score { font-size:1.6rem; font-weight:800; font-variant-numeric:tabular-nums; }
+.rrow .solved-n { color:var(--muted); font-size:.9rem; min-width:4.5rem; text-align:right; }
+.rrow.flash { background:var(--green-soft); }
+.rrow.r1 { background:linear-gradient(90deg, var(--yellow-soft), var(--surface)); }
+.stage-feed { list-style:none; padding:0; margin:0; }
+.stage-feed li { padding:.55rem .9rem; margin-bottom:.45rem; background:var(--surface); border-radius:14px; box-shadow:var(--shadow); font-size:1.05rem; animation:rise .5s ease-out; }
+.chal-line { margin:.5rem 0; }
+.chal-line .top { display:flex; justify-content:space-between; font-weight:600; }
+.chal-line .bar { height:10px; background:var(--surface2); border-radius:99px; overflow:hidden; margin-top:.25rem; }
+.chal-line .bar > div { height:100%; border-radius:99px; transition:width .8s; }
+.stage-msg { text-align:center; padding:4rem 1rem; } .stage-msg .big { font-size:clamp(1.8rem,5vw,3.4rem); font-weight:800; margin-bottom:1.5rem; }
+.stage-msg .chips { max-width:900px; margin:0 auto; max-height:none; }
+@keyframes fadein { from{opacity:0} to{opacity:1} }
+@keyframes rise { from{transform:translateY(14px);opacity:0} to{transform:none;opacity:1} }

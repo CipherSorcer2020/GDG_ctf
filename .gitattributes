@@ -1,0 +1,20 @@
+# One rule for everyone: text files are stored with LF and checked out with LF,
+# on Windows too. (A run.sh saved with Windows line endings fails on Linux with
+# "bad interpreter: /usr/bin/env bash^M".)
+* text=auto eol=lf
+
+# Windows batch files need CRLF.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Never touch binaries (a "fixed" line ending would corrupt them).
+*.exe  binary
+*.dll  binary
+*.pdb  binary
+*.jpg  binary
+*.jpeg binary
+*.png  binary
+*.gif  binary
+*.webp binary
+*.woff2 binary
+*.zip  binary

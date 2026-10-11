@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scoreboard</title>
+<link rel="icon" href="/brand/logo">
+<script src="/static/js/theme.js"></script>
+<link rel="stylesheet" href="/static/css/theme.css">
+<link rel="stylesheet" href="/static/css/board.css">
+</head>
+<body>
+<div class="colorbar"><i></i><i></i><i></i><i></i></div>
+<header class="stage-head">
+  <img src="/brand/logo" alt="Club logo" class="stage-logo">
+  <span class="spacer"></span>
+  <div class="join-box"><div class="muted">Join at</div><div class="join-url" id="join-url"></div></div>
+  <button id="theme" class="icon-btn" type="button"></button>
+</header>
+
+<div id="stage-wait" class="stage-msg" hidden>
+  <div class="big" id="wait-title">Waiting for players&hellip;</div>
+  <div class="chips" id="wait-players"></div>
+</div>
+
+<main id="stage-main" class="stage" hidden>
+  <section>
+    <h2>&#127942; Leaderboard</h2>
+    <div id="rows" class="rows"></div>
+  </section>
+  <section>
+    <h2>&#127881; Live feed</h2>
+    <ul id="feed" class="stage-feed"></ul>
+    <h2 style="margin-top:1.6rem">&#127937; Challenges</h2>
+    <div id="chals"></div>
+  </section>
+</main>
+<script src="/static/js/common.js"></script>
+<script src="/static/js/fx.js"></script>
+<script src="/static/js/board.js"></script>
+</body>
+</html>

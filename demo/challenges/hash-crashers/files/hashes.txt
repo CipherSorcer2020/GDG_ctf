@@ -1,0 +1,13 @@
+##############################################################
+# Totally-Secure-Corp - login database dump (MD5, dont judge us)
+#
+# flag policy: four cracked words, joined with _, wrapped flag{}
+##############################################################
+
+user       password-hash                            ?
+--------   --------------------------------------   -
+alice      b1f3676cce8d9cb94e3a8e152f78c713       ?
+bob        6b1628b016dff46e6fa35684be6acc96       ?
+carol      388a56dbb62a010dc26a378981346247       ?
+dave       43b90920409618f188bfc6923f16b9fa       ?
+root       6a39ae24b6b7e886f42b370d37c31bee       ?

@@ -1,0 +1,55 @@
+{
+  "name": "Dema CTF",
+  "flag_prefix": "flag",
+  "challenges": {
+    "intercepted": {
+      "name": "intercepted",
+      "title": "Intercepted",
+      "category": "crypto",
+      "points": 150,
+      "flag_hash": "02ab656cf40ff48cd6d1cff30761d8ad29ae315da2a32f753638786c328d1aa1"
+    },
+    "vacation-snaps": {
+      "name": "vacation-snaps",
+      "title": "Vacation Snaps",
+      "category": "forensics",
+      "points": 100,
+      "flag_hash": "d6535fcf970e2729a1bdcc997400a37a93a04136dd64e9476e5fab26a3218bc1"
+    },
+    "interns-backup": {
+      "name": "interns-backup",
+      "title": "The Intern's Backup",
+      "category": "crypto",
+      "points": 200,
+      "flag_hash": "4e7604f8a3febcd73f9bd019f080c1517cdbb1f90559412c218e328e1c0e8344"
+    },
+    "the-mole": {
+      "name": "the-mole",
+      "title": "The Mole",
+      "category": "rev",
+      "points": 150,
+      "flag_hash": "fd3772c2740b02bf9bbd049b115ecb2c0d6da00fbbec15270a3bfee20223cd0b"
+    },
+    "coffee-break": {
+      "name": "coffee-break",
+      "title": "Coffee Break",
+      "category": "web",
+      "points": 100,
+      "flag_hash": "42eded735b565926fc08302ce97363215b2e4199a324f20c7d36ddbcb0b919c5"
+    },
+    "webgame": {
+      "name": "webgame",
+      "title": "Acme Corp: Your First Hack",
+      "category": "misc",
+      "points": 500,
+      "flag_hash": "291c1a253e1f41e7adb2304cc1a530eb478900953b147c1109d00bf43f57c576"
+    }
+  },
+  "solves": {},
+  "spoilers_used": {},
+  "events": [],
+  "branding": {
+    "club": "GDG Universiapolis",
+    "tagline": "Beginner CTF - on campus"
+  }
+}

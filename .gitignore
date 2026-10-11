@@ -1,0 +1,40 @@
+# ---------------- Python ----------------
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+*.whl
+
+# ------- runtime files made by `ctf serve` (never commit) -------
+# (git does not allow comments at the end of a pattern line - keep them on their own line)
+# lobby.json holds the ADMIN TOKEN and the joined players
+lobby.json
+*.tmp
+# automatic score backups
+event.json.bak.*
+*.log
+# output of `ctf pack`
+packages/
+ctf-*.zip
+
+# ---------------- secrets ----------------
+.env
+.env.*
+*.pem
+*.key
+.cloudflared/
+
+# ---------------- editors / OS ----------------
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+Desktop.ini
+node_modules/

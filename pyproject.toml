@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ctf-runner"
+version = "0.2.0"
+description = "Local CTF runner for beginners: lobby, challenges, hints, scoreboard"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.110",
+    "uvicorn>=0.29",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "httpx>=0.27"]
+
+[project.scripts]
+ctf = "ctf_runner.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ctf_runner*"]
+
+[tool.setuptools.package-data]
+ctf_runner = ["web/*.html", "web/css/*.css", "web/js/*.js", "web/fonts/*", "web/img/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
